@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS投稿自動生成AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #E74C3C;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #C0392B;
+        }
+        .features, .pricing, .signup {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #E74C3C;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-btn:hover {
+            background-color: #C0392B;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2C3E50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AIでSNS投稿を完全自動化</h1>
+        <p>企業も個人も簡単にSNS運用ができる次世代ツール</p>
+        <a href="#pricing" class="btn">無料で試す</a>
+    </header>
+
+    <div class="container">
+        <section class="features">
+            <h2>主な機能</h2>
+            <ul>
+                <li>🔥 AIが最適な投稿を自動生成</li>
+                <li>📅 スケジュール投稿機能</li>
+                <li>📊 競合分析 & エンゲージメント予測</li>
+                <li>🏆 企業向けSNS運用の完全自動化</li>
+            </ul>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2>料金プラン</h2>
+            <p><strong>無料プラン:</strong> 1日3回まで投稿生成可能</p>
+            <p><strong>プロプラン:</strong> ¥980/月（無制限 + 予約投稿）</p>
+            <p><strong>企業向けプラン:</strong> ¥5,000/月（競合分析 & 戦略提案付き）</p>
+            <a href="#signup" class="btn">プランを選択</a>
+        </section>
+
+        <section id="signup" class="signup">
+            <h2>登録</h2>
+            <form action="https://checkout.stripe.com/pay" method="POST">
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" class="input-field" required>
+
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" class="input-field" required>
+
+                <label for="plan">プラン選択</label>
+                <select id="plan" name="plan" class="input-field">
+                    <option value="free">無料プラン</option>
+                    <option value="pro">プロプラン ¥980/月</option>
+                    <option value="business">企業向けプラン ¥5,000/月</option>
+                </select>
+                
+                <button type="submit" class="form-btn">登録 & 支払いへ進む</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 SNS投稿自動生成AI - すべての権利を保有</p>
+        <p><a href="#">利用規約</a> | <a href="#">プライバシーポリシー</a></p>
+    </footer>
+</body>
+</html>
